@@ -1,0 +1,38 @@
+.repair-brands{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+
+    grid-gap: 42px 36px;
+
+    @media (max-width: 1024px){
+        grid-gap: 32px 24px;
+    }
+    @media (max-width: 768px){
+        grid-gap: 24px;
+
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+}
+
+.repair-brands__brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    
+
+    img{
+        max-width: 100%;
+        transition: 300ms ease-out;
+        
+    }
+
+    &:hover{
+        img{
+            transform: scale(1.1);
+            
+        }
+    }
+}
+

@@ -1,0 +1,37 @@
+.breadcrumbs{
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (max-width: 1024px){
+        display: none;
+    }
+}
+
+.breadcrumbs__link{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.375;
+    color: #DEDEDE;
+    transition: 300ms;
+    &:not(:last-of-type){
+        margin-right: 14px;
+        position: relative;
+        padding-right: 10px;
+
+        &::before{
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 8px;
+            border: 3px solid transparent; 
+            border-left: 3px solid #FA9100; 
+            transform: translate(70%, 0);
+        }
+    }
+}
+
+.breadcrumbs__link[href]{
+    &:hover{
+        color: #FA9100;
+    }
+}

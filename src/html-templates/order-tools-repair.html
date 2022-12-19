@@ -1,0 +1,88 @@
+<section class="section s-order-tools-repair">
+    <div class="section__inner">
+        <h2 class="title">Заявка на ремонт инструмента</h2>
+
+        <div class="otr-block">
+            <form class="feedback-form otr">
+                <div class="feedback-form__fields">
+                    <div class="feedback-form__input-wrap">
+                        <input type="text" name="name" class="feedback-form__input lg" placeholder="Имя" required>
+                    </div>
+                    
+                    
+                    <div class="feedback-form__input-wrap">
+                        <input type="text" name="phone" class="feedback-form__input lg" placeholder="Телефон" required>
+                    </div>
+            
+                    
+            
+                    <div class="feedback-form__input-wrap">
+                        <button class="feedback-form__send lg">Отправить</button>
+                    </div>
+                    <div class="feedback-form__approve-wrap">
+                        <input type="checkbox" id="otr-cb" name="" class="custom-checkbox" checked>
+                        <label for="otr-cb" class="modal-cb border-orange bg-transparent">
+                            <img src="assets/img/icons/white-checkbox-arrow.svg" alt="">
+                        </label>
+                        <p>Я даю свое согласие на обработку персональных данных</p>
+                    </div>
+                </div>
+
+                <div class="feedback-form__radios">
+                    <p class="feedback-form__radios-title">Количество инструмента</p>
+                    <div>
+                        <div class="feedback-form__radios-line">
+                            <input type="radio" class="custom-radio" name="tools-count" id="tools-count-1" value="До 5 (платный забор)">
+                            <label for="tools-count-1">
+                                <div class="custom-radio-round"></div>
+                                <p>До 5 (платный забор)</p>
+                            </label>
+                            
+                        </div>
+                        <div class="feedback-form__radios-line">
+                            <input type="radio" class="custom-radio" name="tools-count" id="tools-count-2" value="Больше 5 (бесплатный забор)">
+                            <label for="tools-count-2">
+                                <div class="custom-radio-round"></div>
+                                <p>Больше 5 (бесплатный забор)</p>
+                            </label>
+                        </div>
+                        <div class="feedback-form__radios-line">
+                            <input type="radio" class="custom-radio" name="tools-count" id="tools-count-3" value="Сам доставлю">
+                            <label for="tools-count-3">
+                                <div class="custom-radio-round"></div>
+                                <p>Сам доставлю</p>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feedback-form__radios">
+                    <p class="feedback-form__radios-title">Вид заявки</p>
+                    <div>
+                        <div class="feedback-form__radios-line">
+                            <input type="radio" class="custom-radio" name="order-type" value="Ремонт" id="custom-radio-1">
+                            <label for="custom-radio-1">
+                                <div class="custom-radio-round"></div>
+                                <p>Ремонт</p>
+                            </label>
+                        </div>
+                        <div class="feedback-form__radios-line">
+                            <input type="radio" class="custom-radio" name="order-type" value="Диагностика" id="custom-radio-2">
+                            <label for="custom-radio-2">
+                                <div class="custom-radio-round"></div>
+                                <p>Диагностика</p>
+                            </label>
+                        </div>
+                        <div class="feedback-form__radios-line">
+                            <input type="radio" class="custom-radio" name="order-type" value="Обслуживание" id="custom-radio-3">
+                            <label for="custom-radio-3">
+                                <div class="custom-radio-round"></div>
+                                <p>Обслуживание</p>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

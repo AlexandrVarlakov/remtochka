@@ -1,0 +1,142 @@
+.mob-menu{
+    position: absolute;
+    width: calc(100% + 60px);
+    bottom: 0;
+    transform: translate(0, 100%);
+    left: -30px;
+    background: rgba(13, 16, 39, 0.8);
+    backdrop-filter: blur(2px);;
+    height: 0;
+    overflow-y: scroll;
+    transition: 300ms;
+
+}
+
+.mm-parent__item{
+    padding: 20px;
+    transition: 300ms;
+    &:not(:last-of-type){
+        border-bottom: 1px solid #414356;;
+    }
+}
+
+.mm-parent__link{   
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #FFFFFF;
+}
+
+.mm-parent__item.has-child{
+    position: relative;
+    &::before{
+        top: 20px;
+        content: "";
+        position: absolute;
+        right: 20px;
+        border: 5px solid transparent; border-top: 5px solid #fff;
+        transition: 300ms;
+        
+        transform: translate(0, 50%) rotate(-90deg) ;
+    }
+}
+
+.mm-parent__item.has-child.open{
+    
+    .mm-parent__link{
+        color: #FA9100;
+    }
+    &::before{
+        border-top: 5px solid #FA9100;
+        transform: translate(-50%, 100%) rotate(0deg) ;
+    }
+}
+
+.mm-child{
+    padding: 20px 0;
+}
+
+
+.mm-child__item{
+    padding: 20px;
+    padding-right: 40px;
+    transition: 300ms;
+    
+    &:not(:last-of-type){
+        border-bottom: 1px solid #414356;;
+    }
+}
+
+.mm-child__item.has-child{
+    position: relative;
+    transition: 300ms;
+    &::before{
+        top: 20px;
+        content: "";
+        position: absolute;
+        right: 20px;
+        border: 5px solid transparent; border-top: 5px solid #fff;
+        transition: 300ms;
+        
+        transform: translate(0, 50%) rotate(-90deg) ;
+    }
+}
+.mm-child__item.has-child.open{
+    background-color: rgba(250, 145, 0, 0.7);
+    .mm-parent__link{
+        
+    }
+    &::before{
+        
+        transform: translate(-50%, 100%) rotate(0deg) ;
+    }
+}
+
+.mm-child__link{   
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.333;
+    color: #FFFFFF;
+}
+
+.mm-child-container{
+    height: 0;
+    overflow: hidden;
+    transition: 300ms;
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    
+}
+
+.mm-subchild-container{
+    height: 0;
+    overflow: hidden;
+}
+
+.mm-subchild{
+    &:not(:first-of-type){
+        margin-top: 30px;
+    }
+
+    &:first-of-type{
+        padding-top: 20px;
+    }
+
+    &:last-of-type{
+        padding-bottom: 20px;
+    }
+}
+
+.mm-subchild__item{
+    &:not(:first-of-type){
+        margin-top: 12px;
+    }
+}
+
+.mm-subchild__link{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.3333;
+
+    color: #FFFFFF;
+}

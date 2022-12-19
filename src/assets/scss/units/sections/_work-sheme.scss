@@ -1,0 +1,70 @@
+.work-sheme{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 16px;
+
+    @media (max-width: 1024px){
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 32px 16px;
+    }
+
+    @media (max-width: 540px){
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    @media (max-width: 400px){
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+}
+
+.work-sheme__item{
+    padding: 42px 10px 36px;
+    background: #EDF4FF;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.work-sheme__num{
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 1.35;
+    color: #FA9100;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.work-sheme__icon{
+    margin-bottom: 18px;
+}
+
+.work-sheme__text{
+    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.42;
+    text-align: center;
+
+    color: #101010;
+
+
+}
+
+.work-sheme__item.item-6{
+    background: linear-gradient(107.39deg, #FA9100 20.77%, #FFA933 73.18%);
+    
+    .work-sheme__text{
+        color: #fff;
+    }
+
+    .work-sheme__num{
+        color: #fff;
+        text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    }
+}

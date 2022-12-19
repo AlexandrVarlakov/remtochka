@@ -1,0 +1,31 @@
+<div class="feedback-modal">
+    <div class="feedback-modal__close"></div>
+
+    <h3 class="feedback-modal__title">Оставить заявку</h3>
+    <p class="feedback-modal__subtitle">Оставьте заявку и наши менеджеры ответят на все интересующие Вас вопросы.</p>
+
+
+    <form action="url" method="post" class="feedback-form">
+        <div class="feedback-form__input-wrap">
+            <input type="text" name="name" class="feedback-form__input" placeholder="Имя" required>
+        </div>
+        
+        
+        <div class="feedback-form__input-wrap">
+            <input type="text" name="phone" class="feedback-form__input" placeholder="Телефон" required>
+        </div>
+
+        
+
+        <div class="feedback-form__input-wrap">
+            <button class="feedback-form__send">Отправить</button>
+        </div>
+        <div class="feedback-form__approve-wrap">
+            <input type="checkbox" id="modal-approve-cb" name="" class="custom-checkbox" checked>
+            <label for="modal-approve-cb" class="modal-cb">
+                <img src="assets/img/icons/black-checkbox-arrow.svg" alt="">
+            </label>
+            <p>Я даю свое согласие на обработку персональных данных</p>
+        </div>
+    </form>
+</div>
